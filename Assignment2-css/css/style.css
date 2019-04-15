@@ -1,0 +1,298 @@
+/* lägg egen css här */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+* Egen kod
+*/
+
+header{
+    width: 100%;
+    height: 7vh;
+    margin-top: 5%;
+    background-color: white; 
+    padding-bottom: 2em;
+    font-family: 'Roboto Mono', monospace;
+    background-repeat: no-repeat;
+}
+header h1{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 3.4em;
+    text-align: center;  
+}
+#container header p{
+    margin-top: 2%;
+    font-size: 2em;
+    text-align: center;  
+}
+main{
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;  
+    background-color: #C5E3ED;
+}
+nav {
+    width: 80%;
+    height:4vh;
+    overflow: hidden;
+    background-color: #333;
+    margin: auto;
+    margin-bottom: 2vh;
+    
+  }
+ ul li {
+    float:left;
+    text-align: center;
+    width: 25%;
+    margin-top: 1vh;
+
+ } 
+ ul li a{
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     font-size: 2em; 
+ }
+ h2{
+    font-family:  'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size:2em;
+    text-align: center;  
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+h3{
+    font-family:  'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size:1em;
+    text-align: center;  
+    margin-bottom: 1em;
+}
+#products article img{
+    width: 100%;
+}
+
+article p, table{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 120%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+table tr{
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    
+}
+.date time{
+    font-size: 150%;
+   margin-bottom: 1em;
+}
+#story img{
+    width: 100%; 
+}
+#newsletter{
+    background-color: #C5E3ED;
+}
+#newsletter p{
+    font-family:  'Roboto Mono', monospace;
+}
+footer p{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    margin: auto;
+}
+form{
+    font-family:  'Roboto Mono', monospace;  
+}
+aside{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+aside form{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+aside form ul li{
+    width: 100%;
+    font-size:  1.3em;
+}
+
+form input[type="submit"]{
+    margin-top: 0.5em;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    font-size:  0.7em;
+}
+aside p{
+    font-size:  1.5em;
+}
+#story img{
+    padding-bottom: 0.5em;
+
+}
+#story{
+    width: 90%;
+    margin: auto;
+}
+#story p{
+    float:left;
+    text-align: center;
+    margin: auto;
+    font-size: 1.3em;
+    padding-bottom: 0.5em;
+}
+@media screen and (min-width: 1280px) {
+header{
+    width: 100%;
+    height: 10vh;
+    margin-top: 5%;
+    background-color: white; 
+    padding-bottom: 3em;
+    font-family: 'Roboto Mono', monospace;
+    background-repeat: no-repeat;
+}    
+header h1{
+    font-size: 6em;
+}
+h2{
+    font-family:  'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size:2.5em;
+    text-align: center;  
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+h3{
+    font-family:  'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size:1.5em;
+    text-align: center;  
+    margin-bottom: 1.5em;
+}
+#products article img{
+    width: 90%;
+    }
+#story img{
+    width: 90%; 
+}
+section p{
+    font-size:1.5em;
+    }
+#story p{
+    font-size:1.5em;
+    text-align: center; 
+}   
+table{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size:  1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#classes table td{
+    border-bottom: 1px solid black;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+    
+    }
+aside{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+aside form{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+aside form ul li{
+    width: 100%;
+    font-size:  1.2em;
+    display: block;
+}
+form input[type="submit"]{
+    margin-top: 0.5em;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    font-size:  0.7em;
+}
+aside p{
+    font-size:  1.5em;
+}
+#story{
+    width: 90%;
+    margin: auto;
+}
+#story p{
+    float:left;
+    text-align: center;
+    font-size: 1.4em;
+    margin: auto;
+   
+}
+form input[type="radio"]{
+    font-size: 1 em;
+}
+
+}

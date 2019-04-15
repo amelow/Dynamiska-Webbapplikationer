@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    <title>Café Choco-Latte </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+    <link rel="stylesheet" type="text/css" media="screen" href="./stil/style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Café Choco-Latte </h1>
+            <h2>Fantastiskt kaffe &amp; läckra bakverk</h2>
+            <p>Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren.
+                Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.
+                Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Hem</a></li>
+                    <li><a href="./ChokladProvning.html">Chokladprovning</a></li>
+                    <li><a href="./Kakao.html">Om Kakao</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                    <li><a href="">Om oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="" method="POST">
+                <!-- tagg för ett formulär-->
+                <fieldset>
+                    <!--Fieldset taggen används för att att gruppera element tillsammans och för att skapa boxen runtomkring-->
+
+                    <legend>Välj datum:</legend>
+                    <p>
+                        <input type="checkbox" name="datum" id="checkbox1">
+                        <label for="checkbox1">30 april</label>
+                    </p>
+                    <p> <input type="checkbox" name="datum" id="checkbox2">
+                        <label for="checkbox2">2 maj</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="datum" id="checkbox3">
+                        <label for="checkbox3">7 maj</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="datum" id="checkbox4">
+                        <label for="checkbox4">9 maj</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="datum" id="checkbox5">
+                        <label for="checkbox5">14 maj</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="datum" id="checkbox6">
+                        <label for="checkbox6">16 maj</label>
+                    </p>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Välj antal personer:</legend>
+                    <label for="type">Antal</label>
+                    <select id="type" name="type">
+                        <option value="antal">1</option>
+                        <option value="antal">2</option>
+                        <option value="antal">3</option>
+                        <option value="antal">4</option>
+                        <option value="antal">5</option>
+                        <option value="antal">6</option>
+                        <option value="antal">7</option>
+                        <option value="antal">8</option>
+                        <option value="antal">9</option>
+                        <option value="antal">10</option>
+                        <option value="antal">11</option>
+                        <option value="antal">12</option>
+                    </select>
+
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <legend>Fyll i dina uppgifter:</legend>
+                        <p>
+                            <label for="namn">Namn</label>
+                            <input type="text" placeholder="Namn.. " id="namn">
+                        </p>
+                        <p>
+                            <label for="num">Mobil</label>
+                            <input type="text" placeholder="Nummer..." id="num">
+                        </p>
+                        <p>
+                            <label for="epost">Epost</label>
+                            <input type="text" placeholder="Epost..." id="epost">
+                        </p>
+
+                        <label>Meddelande</label>
+                        <br><textarea name="Meddelande.." id="mgs" cols="30" rows="10"></br></textarea>
+
+                </fieldset>
+                <br><button type="submit">Bekräfta bokning</br></button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
