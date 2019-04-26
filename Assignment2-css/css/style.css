@@ -65,12 +65,12 @@ header{
 header h1{
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
-    font-size: 3.4em;
+    font-size: 3em;
     text-align: center;  
 }
 #container header p{
     margin-top: 2%;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;  
 }
 main{
