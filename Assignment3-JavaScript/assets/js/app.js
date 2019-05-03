@@ -30,36 +30,10 @@ function handleResult(result) {
         trElements.appendChild(teams);
 
         var checkmark = document.createElement("td");
-       
-      
-       
+        checkmark.setAttribute("id", "Check");
+        checkmark.innerHTML = result[i].outcome;
+        trElements.appendChild(checkmark);
 
-
-
-  /*  var numberElements = document.createElement("tr");
-    var teamElements = document.createElement("td");
-    numberElements.setAttribute("id", "num"); 
-    numberElements.innerHTML =result[i].gameNumber;
-    teamElements.innerHTML =result[i].teams;
-    document.getElementById("table").appendChild(numberElements);
-    document.getElementById("num").appendChild(teamElements);
-    */
-
-
-      /* var trElements = document.createElement("tr");
-       trElements.setAttribute("id", "trEle"); 
-
-        var numberElements = document.createElement("td");
-        var teamElements = document.createElement("td");
-        numberElements.setAttribute("id", "num"); 
-        numberElements.innerHTML =result[i].gameNumber;
-        teamElements.innerHTML =result[i].teams;
-        document.getElementById("trEle").appendChildren(numberElements,teamElements);
-        document.getElementById("table").appendChild(trElements);
-
-       // document.getElementById("table").appendChild(numberElements);
-        //document.getElementById("num").appendChild(teamElements);
-        */
         console.log(result[i]);
 
     }
