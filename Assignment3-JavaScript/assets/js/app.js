@@ -28,13 +28,45 @@ function handleResult(result) {
         teams.setAttribute("id","Team");
         teams.innerHTML = result[i].teams;
         trElements.appendChild(teams);
+        
+        if(result[i].outcome== "2"){
+        var checkmark1 = document.createElement("td");
+        checkmark1.setAttribute("id", "checkmark1");
+        checkmark1.setAttribute("class","Check");
 
-        var checkmark = document.createElement("td");
-        checkmark.setAttribute("id", "Check");
-        checkmark.innerHTML = result[i].outcome;
-        trElements.appendChild(checkmark);
+        var checkmarkX = document.createElement("td");
+        checkmarkX.setAttribute("id", "checkmarkX");
+        checkmarkX.setAttribute("class","Check");
 
-        console.log(result[i]);
+        var checkmark2 = document.createElement("td");
+        checkmark2.setAttribute("id", "checkmark2");
+        checkmark2.setAttribute("class","Check");
+        checkmark2.innerHTML = result[i].outcome;
+
+        trElements.appendChild(checkmark1);
+        trElements.appendChild(checkmarkX);
+        trElements.appendChild(checkmark2)
+        } if(result[i].outcome== "X"){
+
+            var checkmark1 = document.createElement("td");
+            checkmark1.setAttribute("id", "checkmark1");
+            checkmark1.setAttribute("class","Check");
+
+            var checkmarkX = document.createElement("td");
+            checkmarkX.setAttribute("id", "checkmarkX");
+            checkmarkX.setAttribute("class","Check");
+            checkmarkX.innerHTML = result[i].outcome;
+
+            trElements.appendChild(checkmark1);
+            trElements.appendChild(checkmarkX);
+        } if(result[i].outcome== "1"){
+            var checkmark1 = document.createElement("td");
+            checkmark1.setAttribute("id", "checkmark1");
+            checkmark1.setAttribute("class","Check");
+            checkmark1.innerHTML = result[i].outcome;
+            trElements.appendChild(checkmark1);
+        }
+ 
 
     }
 
