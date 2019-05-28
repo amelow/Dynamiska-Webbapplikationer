@@ -2,10 +2,13 @@
 <html lang="sv">
 
 <head>
-    <meta charset="utf-8"></meta>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
     <title>Djupvikhamn </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
     <script type="" src="./app.js"></script>
 </head>
@@ -15,10 +18,8 @@
         <header>
             <h1>Djupvikhamn</h1>
             <nav>
-                <!--Nav är för att gruppera ihop navigeringslänkar-->
                 <ul>
-                    <!--ul är en osorterad lista(bara punktform).li taggarna är list items i ul-->
-                    <li><a href="./index.html">Hem</a></li> <!--Länkar-->
+                    <li><a href="./index.html">Hem</a></li>
                     <li><a href="./gästplatser.html">Gästplatser</a></li>
                     <li><a href="./turistmål.html">Turistmål</a></li>
                     <li><a href="./kontakt.html">Kontakt</a></li>
@@ -26,7 +27,63 @@
                 </ul>
             </nav>
         </header>
-        <h3>Bla</h3>
+        <main>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Vad gäller ärendet?</legend>
+                    <p>
+                        <input type="checkbox" name="opt1" id="checkbox1">
+                        <label for="checkbox1">Båtplats</label>
+                    </p>
+                    <p> <input type="checkbox" name="opt2" id="checkbox2">
+                        <label for="checkbox2">Medlem</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="op3" id="checkbox3">
+                        <label for="checkbox3"> Övrigt</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Hur vill du bli kontaktad?</legend>
+                    <label for="type">Välj: </label>
+                    <select id="type" name="type">
+                        <option value="opt1">Mobilnumret</option>
+                        <option value="opt2">Mejlen</option>
+                        <option value="opt3">Inte alls</option>
+                    </select>
+
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <legend>Fyll i dina uppgifter:</legend>
+                        <p>
+                            <label for="namn">Namn</label>
+                            <input type="text" placeholder="Namn.. " id="namn">
+                        </p>
+                        <p>
+                            <label for="namn">Efternamn</label>
+                            <input type="text" placeholder="Efternamn.. " id="Efternamn">
+                        </p>
+                        <p>
+                            <label for="num">Mobil</label>
+                            <input type="text" placeholder="Nummer..." id="num">
+                        </p>
+                        <p>
+                            <label for="epost">Epost</label>
+                            <input type="text" placeholder="Epost..." id="epost">
+                        </p>
+                        <p>
+                            <label for="rubrik">Rubrik för ärendet:</label>
+                            <input type="text" placeholder="rubrik..." id="rubrik">
+                        </p>
+                        <label>Meddelande</label>
+                        <br><textarea name="Meddelande.." id="mgs" cols="30" rows="10"></textarea>
+
+                </fieldset>
+                <br><button type="submit">Skicka</br></button>
+            </form>
+        </main>
     </div>
 </body>
+
 </html>
