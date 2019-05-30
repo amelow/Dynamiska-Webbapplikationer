@@ -93,18 +93,32 @@ header {
 }
 nav{
     width: 80%;
-    height:5vh;
+    height:7vh;
     overflow: hidden;
     margin: auto;
     margin-bottom: 2vh;
 }
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+}
 ul li {
-    float:left;
     text-align: center;
-    width: 15%;
-    margin-top: 1vh;
-
+    
  } 
+ ul li::before {
+     content:"";
+     height: 2.5em;
+     width: 2.5em;
+     background-image: url("./Djupvikbilder/steering.jpg");
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    top: .7em;
+    left: -1em;
+ }
 ul li a{
     text-decoration: none;
     text-align: center;
@@ -167,18 +181,18 @@ img{
     height: 100%;
 }
 #image1{
-    background-image: url('./Djupvik bilder/D-17.jpg');
+    background-image: url('./Djupvikbilder/D-17.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 #image2{
-    background-image: url('./Djupvik bilder/D-18.jpg');
+    background-image: url('./Djupvikbilder/D-18.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
 }
 #image3{
-    background-image: url('./Djupvik bilder/D-14.jpg');
+    background-image: url('./Djupvikbilder/D-14.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
     background-position: center;
