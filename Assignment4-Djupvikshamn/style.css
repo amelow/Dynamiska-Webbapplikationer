@@ -53,23 +53,6 @@ table {
 /*
 * Egen kod
 */
-body, html {
-    height: 100%;
-  }
-  
-.parallax { 
-    /* The image used */
-    background-image: url("./Djupvikbilder/D-2.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 header h1{
     font-family: 'Amatic SC', cursive;
     font-weight: 300;
@@ -146,7 +129,7 @@ h4{
     font-size: 2em;  
     font-family: 'Amatic SC', cursive;
     text-align: center;
-    margin-top: 0.1em;
+    margin-top: 0.5em;
     margin-bottom: 0.3em;
     
 }
@@ -182,6 +165,7 @@ img{
 .imageItem{
     width: 100%;
     height: 100%;
+    
 }
 #image1{
     background-image: url('./Djupvikbilder/D-17.jpg');
@@ -231,9 +215,23 @@ img{
 .twoColumnGrid img{
     margin: auto;
 }
+.twoColumnGrid p{
+    margin-top: 10em;
+}
+.twoColumnGrid ul li {
+   
+}
 #konradPic{
     width: 20%;
     height: 30%;
+    margin-left: 24em;
+    margin-top: 1em;
+    margin-bottom:0.5em;
+}
+#nameTag{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom:1em;
 }
 #nameTable{
     text-align: center;
@@ -295,4 +293,79 @@ img{
     height:85vh;
     width: 100%;
 }
-   
+#nameList li:nth-child(odd){
+    font-style: italic;
+}
+#nameList li:nth-child(even){
+    margin-left: 1em;
+    font-weight: bolder;
+}
+@media screen and (max-width: 1500px) {
+    header h1{
+        font-family: 'Amatic SC', cursive;
+        font-weight: 300;
+        font-size: 7em;
+        text-align: center;  
+    }
+    header {
+        width: 100%;
+        margin-top: 5%; 
+        padding-bottom: 2em;
+        font-family:  'Amatic SC', cursive;
+        background-repeat: no-repeat;
+    } 
+    #logo{
+        display: block;
+        max-height: 15%;
+        position: absolute;
+        top: 36px;
+        left: 71%;
+    }
+    nav{
+        width: 80%;
+        height:8vh;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        height: 100%;
+    }
+    ul li {
+        text-align: center;
+        
+     } 
+     ul li::before {
+         content:"";
+         height: 2em;
+         width: 2em;
+         background-image: url("./Djupvikbilder/steering.jpg");
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        top: .7em;
+        left: -1em;
+     }
+    ul li a{
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.5em; 
+        color: black;
+    }
+    body{
+        margin: auto;
+        font-family: 'Roboto Mono', monospace;
+        width: 90%; 
+    }
+    h3{
+        font-family: 'Amatic SC', cursive;
+        font-size: 3em;  
+        text-align: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.3em;
+        
+    }
+}
