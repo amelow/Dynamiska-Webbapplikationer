@@ -218,9 +218,6 @@ img{
 .twoColumnGrid p{
     margin-top: 10em;
 }
-.twoColumnGrid ul li {
-   
-}
 #konradPic{
     width: 20%;
     height: 30%;
@@ -293,12 +290,8 @@ img{
     height:85vh;
     width: 100%;
 }
-#nameList li:nth-child(odd){
-    font-style: italic;
-}
-#nameList li:nth-child(even){
-    margin-left: 1em;
-    font-weight: bolder;
+#nameList ul li{
+text-align: center;
 }
 @media screen and (max-width: 1500px) {
     header h1{
