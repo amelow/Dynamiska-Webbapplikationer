@@ -32,6 +32,11 @@ function handleResult(result) {
     console.log("DateString: "+dateString);
     console.log("Timestring:"+ timeString);
 
+
+    var test = document.createElement("h3");
+    test.innerHTML =dateString;
+    document.getElementById("weatherplace").appendChild(test);
+
 }
 window.addEventListener('load', init)
 
