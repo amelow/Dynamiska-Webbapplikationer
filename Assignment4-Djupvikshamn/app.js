@@ -6,6 +6,11 @@ function init() {
 }
 function changeLanguage() {
     console.log("In change-Language function")
+    var element = document.getElementById("englishLogo")
+    element.addEventListener("click", myFunction);
+}
+function myFunction() {
+    console.log("Hello World!");
 }
 function fetchData(url = 'https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1489/lat/57.3081/data.json') {
     console.log("Fetching data ");
