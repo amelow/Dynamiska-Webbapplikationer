@@ -311,9 +311,27 @@ button{
     font-size: 16px;
     margin-bottom: 3em;
 }
-form{
-    text-align: center;
+form fieldset{
+    border: solid 3px #474544;
+    background-color: aliceblue;
+    margin-bottom: 1em;
+   
 }
+input[type=text] {
+    width: 80%;
+    padding: 10px 4px;
+    box-sizing: border-box;
+    margin-left: 20em;
+    margin-bottom: 1em;
+  }
+  textarea{
+    margin-left: 20em; 
+    margin-bottom: 1em;
+  }
+  #type{
+    margin-bottom: 1em;  
+  }
+  
 footer {
     height: 7em;
     background-color:#174062;
