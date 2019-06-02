@@ -11,7 +11,9 @@ function changeLanguage() {
 }
 function myFunction() {
     console.log("Hello World!");
-    var popupWindow = window.open('./engelska.html', 'name', 'width=900,height=550');
+    //window.location.replace("./engelska.html");
+    
+    var popupWindow = window.open('./engelska.html', 'Djupvikhamn', 'width=900,height=550');
     popupWindow.focus();
 }
 function fetchData(url = 'https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1489/lat/57.3081/data.json') {
