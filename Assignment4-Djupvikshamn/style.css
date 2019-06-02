@@ -350,9 +350,7 @@ input[type=text] {
   #sun{
     width: 70%;
     margin-left: 8em;
-    margin-top: 0.6em;
-      
-
+    margin-top: 0.6em; 
   }
   
 footer {
@@ -374,6 +372,22 @@ footer img{
     margin-bottom: 0.5em;
     text-align: center;
 }
+#fbLogo{
+    height: 65px;
+    width: 65px;
+    margin-left:35em;
+}
+#instaLogo{
+    height: 65px;
+    width: 65px;
+}
+#twitterLogo{
+    height: 65px;
+    width: 65px;
+   
+
+}
+/*
 @media screen and (max-width: 1500px) {
     header h1{
         font-family: 'Amatic SC', cursive;

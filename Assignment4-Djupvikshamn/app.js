@@ -24,7 +24,12 @@ function fetchData(url = 'https://opendata-download-metfcst.smhi.se/api/category
 function handleResult(result) {
     console.log("In handleResult function");
     console.log("All results:");
-    console.log(result);
+    console.log(result)
+    //var obj = JSON.parse(result);
+    var obj = new Date(result.approvedTime);
+    console.log(obj)
+    var x = obj.toDateString();
+    console.log(x)
 
 }
 window.addEventListener('load', init)
