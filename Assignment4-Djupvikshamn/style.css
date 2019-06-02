@@ -154,6 +154,12 @@ img{
     margin-top: 1em;
     margin-bottom:1em;
 }
+#overview{
+    height:85vh;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
 .imageContainer{
     margin-top: 2em;
     margin-bottom: 1em;
@@ -293,6 +299,20 @@ img{
 #nameList ul li{
 text-align: center;
 }
+button{
+    background-color:#174062;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 3em;
+}
+form{
+    text-align: center;
+}
 @media screen and (max-width: 1500px) {
     header h1{
         font-family: 'Amatic SC', cursive;
@@ -345,7 +365,7 @@ text-align: center;
     ul li a{
         text-decoration: none;
         text-align: center;
-        font-size: 1.5em; 
+        font-size: 1.3em; 
         color: black;
     }
     body{
@@ -360,5 +380,10 @@ text-align: center;
         margin-top: 0.5em;
         margin-bottom: 0.3em;
         
+    }
+    #nameTable{
+        text-align: center;
+       margin-left: 14em;
+       margin-top: 2em;
     }
 }
