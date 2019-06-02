@@ -25,11 +25,12 @@ function handleResult(result) {
     console.log("In handleResult function");
     console.log("All results:");
     console.log(result)
-    //var obj = JSON.parse(result);
-    var obj = new Date(result.approvedTime);
-    console.log(obj)
-    var x = obj.toDateString();
-    console.log(x)
+    var dateObj = new Date(result.approvedTime);
+    console.log(dateObj)
+    var dateString = dateObj.toDateString();
+    var timeString = dateObj.toTimeString();
+    console.log("DateString: "+dateString);
+    console.log("Timestring:"+ timeString);
 
 }
 window.addEventListener('load', init)
