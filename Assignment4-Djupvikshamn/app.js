@@ -2,16 +2,23 @@
 function init() {
     console.log("Initializing program");
     fetchData();
+    changeLanguage();
+}
+function changeLanguage() {
+    console.log("In change-Language function")
 }
 function fetchData(url = 'https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1489/lat/57.3081/data.json') {
+    console.log("Fetching data ");
     fetch(url)
         .then(result => result.json())
         .then(result => handleResult(result))
         .catch(error => console.log(error))
 }
-function handleResult(result){
+function handleResult(result) {
     console.log("In handleResult function");
     console.log("All results:");
     console.log(result);
+
 }
-window.addEventListener('load', init) 
+window.addEventListener('load', init)
+
