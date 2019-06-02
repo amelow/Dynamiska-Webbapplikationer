@@ -11,8 +11,6 @@ function changeLanguage() {
 }
 function myFunction() {
     console.log("Hello World!");
-    //window.location.replace("./engelska.html");
-    
     var popupWindow = window.open('./engelska.html', 'Djupvikhamn', 'width=900,height=550');
     popupWindow.focus();
 }
