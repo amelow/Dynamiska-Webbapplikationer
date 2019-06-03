@@ -32,10 +32,18 @@ function handleResult(result) {
     console.log("DateString: "+dateString);
     console.log("Timestring:"+ timeString);
 
-
-    var test = document.createElement("h3");
-    test.innerHTML =dateString;
-    document.getElementById("weatherplace").appendChild(test);
+    var resultArray = result.timeSeries;
+    console.log("TimeSeries array:");
+    console.log(resultArray);
+    var dateElement = document.createElement("h4");
+    dateElement.setAttribute("id","date")
+    dateElement.innerHTML =dateString;
+    var timeElement = document.createElement("h4");
+    timeElement.setAttribute("id","time");
+    timeElement.innerHTML =timeString.slice(0,8);
+   
+    document.getElementById("weatherplace").appendChild(dateElement);
+    document.getElementById("weatherplace").appendChild(timeElement);
 
 }
 window.addEventListener('load', init)
