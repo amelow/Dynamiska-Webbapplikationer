@@ -384,8 +384,18 @@ footer img{
 #twitterLogo{
     height: 65px;
     width: 65px;
-   
-
+}
+#protocolTable{
+    
+    margin-left: 25em;
+    margin-top: 2em;
+    }
+#protocolTable tr th{
+text-align: center;
+margin-left: 0.5em;
+}
+#protocolTable tr td{
+margin-left: 0.9em;
 }
 /*
 @media screen and (max-width: 1500px) {

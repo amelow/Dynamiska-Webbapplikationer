@@ -35,15 +35,15 @@ function handleResult(result) {
     var resultArray = result.timeSeries;
     console.log("TimeSeries array:");
     console.log(resultArray);
-    var dateElement = document.createElement("h4");
+    var dateElement = document.createElement("p");
     dateElement.setAttribute("id","date")
     dateElement.innerHTML =dateString;
-    var timeElement = document.createElement("h4");
+    var timeElement = document.createElement("p");
     timeElement.setAttribute("id","time");
     timeElement.innerHTML =timeString.slice(0,8);
    
     document.getElementById("weatherplace").appendChild(dateElement);
-    document.getElementById("weatherplace").appendChild(timeElement);
+    document.getElementById("timePlace").appendChild(timeElement);
 
 }
 window.addEventListener('load', init)
