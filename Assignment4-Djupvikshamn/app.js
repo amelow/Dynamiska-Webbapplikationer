@@ -6,7 +6,7 @@ function init() {
     changeLanguage();
 }
 function getGridPictures() {
-    const images = Array.from(document.getElementsByClassName("turistpagePics"));
+    const images = Array.from(document.getElementsByClassName("gridPagePics"));
 
     images.map(image => {
         const ratio = image.height / image.width;

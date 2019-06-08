@@ -172,12 +172,11 @@ img{
     border: 4px solid white;
   }
   
-  .turistpagePics {
+  .gridPagePics {
     display: block;
     max-height: initial;
     max-width: initial;
   }
-  
   .tall {
     width: 100%;
     height: auto;
@@ -187,27 +186,6 @@ img{
     height: 100%;
     width: auto;
   }
-
-
-#image4{
-    background-image: url('./Djupvikbilder/D-28.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-    
-}
-#image5{
-    background-image: url('./Djupvikbilder/D-26.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: center;
-}
-#image6{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
 .twoColumnGrid{
     margin-top: 1em;
     margin-bottom: 1em;
