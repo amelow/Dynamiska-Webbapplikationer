@@ -219,42 +219,7 @@ img{
    margin-top: 2em;
 
 }
-#gridImage1{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
-#gridImage2{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
-#gridImage3{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
-#gridImage4{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
-#gridImage5{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
-#gridImage6{
-    background-image: url('./Djupvikbilder/D-9.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: left;
-}
+
 #beachPic{
     margin-top: 2em;
     margin-bottom:2em;
