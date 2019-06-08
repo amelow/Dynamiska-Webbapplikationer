@@ -17,10 +17,10 @@ function getGridPictures() {
 function changeLanguage() {
     console.log("In change-Language function")
     var element = document.getElementById("englishLogo")
-    if (element) element.addEventListener("click", myFunction);
+    if (element) element.addEventListener("click", openPopup);
 }
-function myFunction() {
-    console.log("Hello World!");
+function openPopup() {
+    console.log("Open the english- page");
     var popupWindow = window.open('./engelska.html', 'Djupvikhamn', 'width=900,height=550');
     popupWindow.focus();
 }
