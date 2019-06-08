@@ -35,6 +35,7 @@ function handleResult(result) {
     console.log("In handleResult function");
     console.log("All results:");
     console.log(result)
+    var parentElement = document.getElementById("weatherContainer");
     var dateObj = new Date(result.approvedTime);
     console.log(dateObj)
     var dateString = dateObj.toDateString();
@@ -42,9 +43,23 @@ function handleResult(result) {
     console.log("DateString: " + dateString);
     console.log("Timestring:" + timeString);
 
+
     var resultArray = result.timeSeries;
     console.log("TimeSeries array:");
     console.log(resultArray);
+    var parameters = resultArray[0].parameters;
+    var degreeString = "";
+    parameters.map(parameter=>{
+        if(parameter.name == "t"){
+            degreeString = parameter.values.toString();
+        }
+       
+    })
+  
+    var degreeElement = document.createElement("p");
+    degreeElement.setAttribute("id", "degree")
+    degreeElement.innerHTML = degreeString + "&deg;";
+
     var dateElement = document.createElement("p");
     dateElement.setAttribute("id", "date")
     dateElement.innerHTML = dateString;
@@ -52,8 +67,9 @@ function handleResult(result) {
     timeElement.setAttribute("id", "time");
     timeElement.innerHTML = timeString.slice(0, 8);
 
-    document.getElementById("weatherplace").appendChild(dateElement);
-    document.getElementById("timePlace").appendChild(timeElement);
+    parentElement.appendChild(timeElement);
+    parentElement.appendChild(dateElement);
+    parentElement.appendChild(degreeElement);
 
 }
 window.addEventListener('load', init)
