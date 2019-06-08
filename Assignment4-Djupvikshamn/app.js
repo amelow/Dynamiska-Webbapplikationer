@@ -1,13 +1,23 @@
 'use strict'
 function init() {
     console.log("Initializing program");
+    getGridPictures();
     fetchData();
     changeLanguage();
+}
+function getGridPictures() {
+    const images = Array.from(document.getElementsByClassName("turistpagePics"));
+
+    images.map(image => {
+        const ratio = image.height / image.width;
+        console.log(ratio);
+        ratio >= 1 ? image.classList.add("tall") : image.classList.add("wide");
+    })
 }
 function changeLanguage() {
     console.log("In change-Language function")
     var element = document.getElementById("englishLogo")
-    element.addEventListener("click", myFunction);
+    if (element) element.addEventListener("click", myFunction);
 }
 function myFunction() {
     console.log("Hello World!");
@@ -29,19 +39,19 @@ function handleResult(result) {
     console.log(dateObj)
     var dateString = dateObj.toDateString();
     var timeString = dateObj.toTimeString();
-    console.log("DateString: "+dateString);
-    console.log("Timestring:"+ timeString);
+    console.log("DateString: " + dateString);
+    console.log("Timestring:" + timeString);
 
     var resultArray = result.timeSeries;
     console.log("TimeSeries array:");
     console.log(resultArray);
     var dateElement = document.createElement("p");
-    dateElement.setAttribute("id","date")
-    dateElement.innerHTML =dateString;
+    dateElement.setAttribute("id", "date")
+    dateElement.innerHTML = dateString;
     var timeElement = document.createElement("p");
-    timeElement.setAttribute("id","time");
-    timeElement.innerHTML =timeString.slice(0,8);
-   
+    timeElement.setAttribute("id", "time");
+    timeElement.innerHTML = timeString.slice(0, 8);
+
     document.getElementById("weatherplace").appendChild(dateElement);
     document.getElementById("timePlace").appendChild(timeElement);
 
