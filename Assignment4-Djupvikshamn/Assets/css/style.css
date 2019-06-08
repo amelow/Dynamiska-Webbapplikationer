@@ -94,7 +94,7 @@ ul li {
      content:"";
      height: 2.5em;
      width: 2.5em;
-     background-image: url("./Djupvikbilder/Extra/Icons/steering.jpg");
+     background-image: url("/Assets/Djupvikbilder/Extra/Icons/steering.jpg");
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
