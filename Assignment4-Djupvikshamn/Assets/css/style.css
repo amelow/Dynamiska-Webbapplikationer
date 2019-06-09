@@ -207,7 +207,7 @@ img{
     margin-top: 1em;
     margin-bottom:0.5em;
 }
-#nameTag{
+.nameTag{
     text-align: center;
     margin-top: 1em;
     margin-bottom:1em;
@@ -319,4 +319,13 @@ footer img{
     text-align: center;
     margin-left: 15em;
     margin-top: 2em;
+}
+#thermometer{
+    height: 65px;
+    width: 65px;
+    margin-bottom: 0.5em;
+   
+}
+#weatherContainer {
+    text-align: center;
 }
