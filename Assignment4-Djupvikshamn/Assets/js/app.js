@@ -1,9 +1,10 @@
 'use strict'
 function init() {
-    console.log("Initializing program");
     getGridPictures();
-    fetchData();
-    changeLanguage();
+    var weatherContainer = document.getElementById("weatherContainer");
+    var engLang = document.getElementById("englishLogo");
+    if(engLang) changeLanguage();
+    if(weatherContainer) fetchData();
 }
 function getGridPictures() {
     const images = Array.from(document.getElementsByClassName("gridPagePics"));
@@ -32,21 +33,11 @@ function fetchData(url = 'https://opendata-download-metfcst.smhi.se/api/category
         .catch(error => console.log(error))
 }
 function handleResult(result) {
-    console.log("In handleResult function");
-    console.log("All results:");
-    console.log(result)
     var parentElement = document.getElementById("weatherContainer");
     var dateObj = new Date(result.approvedTime);
-    console.log(dateObj)
     var dateString = dateObj.toDateString();
     var timeString = dateObj.toTimeString();
-    console.log("DateString: " + dateString);
-    console.log("Timestring:" + timeString);
-
-
     var resultArray = result.timeSeries;
-    console.log("TimeSeries array:");
-    console.log(resultArray);
     var parameters = resultArray[0].parameters;
     var degreeString = "";
     parameters.map(parameter=>{
